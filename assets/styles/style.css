@@ -1,0 +1,288 @@
+/* CASCADE STYLE SHEET */
+/* VALORES GLOBALES A REUSAR */
+
+:root {
+  /* SECCION COLORES */
+  /* #colores,primarios,secundarios
+    #gradientes */
+
+  /* Paleta de colores primarios */
+  --color-primary-50: #f3f4f9;
+  --color-primary-100: #e0e2f3;
+  --color-primary-200: #c7cbea;
+  --color-primary-300: #afb5e1;
+  --color-primary-400: #9da3d9;
+  --color-primary-500: #8c93d1;
+  --color-primary-600: #8087ca;
+  --color-primary-700: #747bbf;
+  --color-primary-800: #686fb4;
+  --color-primary-900: #535e9f;
+
+  /* Paleta de colores secundarios */
+  --color-secondary-50: #f5f7fa;
+  --color-secondary-100: #e8ecf3;
+  --color-secondary-200: #d5dbea;
+  --color-secondary-300: #c0c9e2;
+  --color-secondary-400: #adb8d9;
+  --color-secondary-500: #9ba8d0;
+  --color-secondary-600: #8ea0c9;
+  --color-secondary-700: #8297be;
+  --color-secondary-800: #758eb3;
+  --color-secondary-900: #5d7c9f;
+
+  /* Paleta de colores de success */
+  --color-success-50: #f2f8f5;
+  --color-success-100: #daf0e8;
+  --color-success-200: #b2e3d1;
+  --color-success-300: #8bd6ba;
+  --color-success-400: #68cbab;
+  --color-success-500: #45c09c;
+  --color-success-600: #3fb693;
+  --color-success-700: #379c88;
+  --color-success-800: #2f8c7c;
+  --color-success-900: #227063;
+
+  /* Paleta de colores de peligro */
+  --color-danger-50: #f9f4f4;
+  --color-danger-100: #f2e9ea;
+  --color-danger-200: #e6cfd2;
+  --color-danger-300: #daafb9;
+  --color-danger-400: #d091a4;
+  --color-danger-500: #c2738f;
+  --color-danger-600: #b96e88;
+  --color-danger-700: #af647e;
+  --color-danger-800: #a55a74;
+  --color-danger-900: #944764;
+
+  /* Paleta de colores de advertencia */
+  --color-warning-50: #fdf9f0;
+  --color-warning-100: #fbf0d8;
+  --color-warning-200: #f6e4b0;
+  --color-warning-300: #f0d788;
+  --color-warning-400: #ebb760;
+  --color-warning-500: #e6a938;
+  --color-warning-600: #e39f31;
+  --color-warning-700: #dd9429;
+  --color-warning-800: #d98822;
+
+  /* Paleta de colores de información */
+  --color-info-50: #f4f9fb;
+  --color-info-100: #e0f2f7;
+  --color-info-200: #c7e6f1;
+  --color-info-300: #aed9eb;
+  --color-info-400: #99cde5;
+  --color-info-500: #84c1e0;
+  --color-info-600: #7ab8db;
+  --color-info-700: #70aecf;
+  --color-info-800: #65a4c4;
+  --color-info-900: #5193b2;
+
+  /* Paleta de colores de luz */
+  --color-light-50: #fbfbfb;
+  --color-light-100: #f2f2f2;
+  --color-light-200: #e6e6e6;
+  --color-light-300: #d9d9d9;
+  --color-light-400: #cccccc;
+  --color-light-500: #bfbfbf;
+  --color-light-600: #b3b3b3;
+  --color-light-700: #a6a6a6;
+  --color-light-800: #999999;
+  --color-light-900: #808080;
+
+  /* Paleta de colores oscuros */
+  --color-dark-50: #181818;
+  --color-dark-100: #252525;
+  --color-dark-200: #333333;
+  --color-dark-300: #404040;
+  --color-dark-400: #4d4d4d;
+  --color-dark-500: #595959;
+  --color-dark-600: #666666;
+  --color-dark-700: #737373;
+  --color-dark-800: #808080;
+  --color-dark-900: #8c8c8c;
+
+  /* Gradientes */
+
+  /* Gradientes primarios */
+  --gradient-primary-1: linear-gradient(
+    45deg,
+    var(--color-primary-500),
+    var(--color-primary-900)
+  );
+  --gradient-primary-2: linear-gradient(
+    45deg,
+    var(--color-primary-300),
+    var(--color-primary-700)
+  );
+  --gradient-primary-3: linear-gradient(
+    45deg,
+    var(--color-primary-100),
+    var(--color-primary-500)
+  );
+  --gradient-primary-4: linear-gradient(
+    45deg,
+    var(--color-primary-200),
+    var(--color-primary-600)
+  );
+  --gradient-primary-5: linear-gradient(
+    45deg,
+    var(--color-primary-400),
+    var(--color-primary-800)
+  );
+
+  /* Gradientes secundarios */
+  --gradient-secondary-1: linear-gradient(
+    45deg,
+    var(--color-secondary-500),
+    var(--color-secondary-900)
+  );
+  --gradient-secondary-2: linear-gradient(
+    45deg,
+    var(--color-secondary-300),
+    var(--color-secondary-700)
+  );
+  --gradient-secondary-3: linear-gradient(
+    45deg,
+    var(--color-secondary-100),
+    var(--color-secondary-500)
+  );
+  --gradient-secondary-4: linear-gradient(
+    45deg,
+    var(--color-secondary-200),
+    var(--color-secondary-600)
+  );
+  --gradient-secondary-5: linear-gradient(
+    45deg,
+    var(--color-secondary-400),
+    var(--color-secondary-800)
+  );
+
+  /* Gradientes de éxito */
+  --gradient-success-1: linear-gradient(
+    45deg,
+    var(--color-success-500),
+    var(--color-success-900)
+  );
+  --gradient-success-2: linear-gradient(
+    45deg,
+    var(--color-success-300),
+    var(--color-success-700)
+  );
+  --gradient-success-3: linear-gradient(
+    45deg,
+    var(--color-success-100),
+    var(--color-success-500)
+  );
+  --gradient-success-4: linear-gradient(
+    45deg,
+    var(--color-success-200),
+    var(--color-success-600)
+  );
+  --gradient-success-5: linear-gradient(
+    45deg,
+    var(--color-success-400),
+    var(--color-success-800)
+  );
+
+  /* Gradientes de peligro */
+  --gradient-danger-1: linear-gradient(
+    45deg,
+    var(--color-danger-500),
+    var(--color-danger-900)
+  );
+  --gradient-danger-2: linear-gradient(
+    45deg,
+    var(--color-danger-300),
+    var(--color-danger-700)
+  );
+  --gradient-danger-3: linear-gradient(
+    45deg,
+    var(--color-danger-100),
+    var(--color-danger-500)
+  );
+  --gradient-danger-4: linear-gradient(
+    45deg,
+    var(--color-danger-200),
+    var(--color-danger-600)
+  );
+  --gradient-danger-5: linear-gradient(
+    45deg,
+    var(--color-danger-400),
+    var(--color-danger-800)
+  );
+
+  /* Gradientes de advertencia */
+
+  /* SECCION TIPOGRAFIA */
+
+  /* Variables de tipografía */
+
+  /* Fuentes */
+  --font-family-primary: "Helvetica Neue", Arial, sans-serif;
+  --font-family-secondary: "Roboto", Arial, sans-serif;
+
+  /* Tamaños de fuente */
+  --font-size-base: 16px;
+  --font-size-small: 0.875rem; /* 14px */
+  --font-size-medium: 1rem; /* 16px */
+  --font-size-large: 1.25rem; /* 20px */
+  --font-size-heading1: 2.5rem; /* 40px */
+  --font-size-heading2: 2rem; /* 32px */
+  --font-size-heading3: 1.5rem; /* 24px */
+  --font-size-heading4: 1.25rem; /* 20px */
+  --font-size-heading5: 1.125rem; /* 18px */
+  --font-size-heading6: 1rem; /* 16px */
+
+  /* Líneas de altura */
+  --line-height-base: 1.5;
+  --line-height-heading: 1.2;
+
+  /* Pesos de fuente */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Estilos de énfasis */
+  --text-emphasis-color: var(--color-primary);
+  --text-emphasis-font-weight: var(--font-weight-bold);
+  --text-emphasis-decoration: underline;
+
+  /* Espaciado entre letras */
+  --letter-spacing-wide: 0.05rem;
+  --letter-spacing-narrow: -0.05rem;
+
+  /* Estilos de fuentes adicionales */
+
+  /* Fuente de encabezados decorativos */
+  --font-heading-decorative: "Playfair Display", serif;
+
+  /* Fuente de encabezados audaces */
+  --font-heading-bold: "Montserrat", sans-serif;
+
+  /* Fuente de cuerpo de texto elegante */
+  --font-body-elegant: "Lora", serif;
+
+  /* Fuente de cuerpo de texto moderno */
+  --font-body-modern: "Open Sans", sans-serif;
+
+  /* Fuente de texto de resaltado */
+  --font-text-highlight: "Poppins", sans-serif;
+}
+
+html {
+  /* border-box: add border and padding without increasing box-size */
+
+  box-sizing: border-box;
+  /* god save rem */
+  font-size: 62.5%;
+}
+
+/* inherit box-sizing from .html */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
